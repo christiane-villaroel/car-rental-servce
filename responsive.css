@@ -1,0 +1,76 @@
+@media screen and (max-width:375px) {
+    body#container{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        font-size: 15px;
+    }
+
+   div{
+       width: 250px;
+       height: 275px;
+   }
+ 
+
+    div.sedans{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       
+        padding: 20px 0 25px 20px;
+        border-radius: 10px 10px 0px 0px ;    
+    }
+
+    div.suvs{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0 25px 20px;
+    } 
+    div.luxury{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0 25px 20px;
+        border-radius: 0px 0px 10px 10px ;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1440px){
+    body#container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 30px;
+    }
+    div{
+        width: 275px;
+        height: 80%;
+        padding-left: 3%;
+        padding-top: 2%;
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+     div.sedans{
+        border-radius: 8px 0 0 8px;
+     }
+     div.suvs{
+         
+     }
+     div.luxury{
+         border-radius: 0 8px 8px 0 ;
+     }
+}

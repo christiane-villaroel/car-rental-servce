@@ -1,0 +1,147 @@
+:root {
+    --white-paragraph: hsla(0, 0%, 100%, 0.75);
+    --gray-text:hsl(0, 0%, 95%);
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: white ;
+    font-size: 18px;
+}
+
+div {
+    padding-bottom: 2%;
+}
+
+
+
+.sedans{
+    --background-orange: hsl(31,77%, 52%);
+}
+
+.suvs {
+    --background-darkcyan: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    --background-verydarkcyan: hsl(179, 100%, 13%);
+}
+
+div.sedans{
+    background-color: var(--background-orange);
+}
+
+div.suvs{
+    background-color: var(--background-darkcyan);
+}
+
+div.luxury{
+    background-color: var(--background-verydarkcyan);
+}
+
+img {
+    width:64px;
+    height: 40px;
+}
+
+p{
+    color: var(--white-paragraph);
+    height: 100px;
+}
+
+
+
+button.button{
+    padding: 1em 1em;
+    border-radius: 15px;
+    border: 1px solid white ;
+    height: 45px;
+    width: 120px; 
+}
+
+#sedan_b{
+    color: var(--background-orange);
+}
+#suv_b{
+    color: var(--background-darkcyan);
+}
+#luxury_b{
+    color: var(--background-verydarkcyan);
+}
+
+@media screen and (max-width:500px) {
+    body#container{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding-top: 13%;
+        padding-bottom: 13%;
+    }
+
+   div{
+       width: 250px;
+   }
+ 
+
+    div.sedans{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px 0 25px 20px;
+        border-radius: 10px 10px 0px 0px ;    
+    }
+
+    div.suvs{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 20px 0 25px 20px;
+    } 
+    div.luxury{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 20px 0 25px 20px;
+        border-radius: 0px 0px 10px 10px ;
+        
+    }   
+}
+
+@media screen and (min-width:501px) {
+    body#container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 30px;
+        flex-grow: 2;
+        font-size: 15px;
+    }
+    div{
+        width: 275px;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+     div.sedans{
+        border-radius: 8px 0 0 8px;
+        
+     }
+    
+     div.luxury{
+         border-radius: 0 8px 8px 0 ;
+     }
+    
+}
+
